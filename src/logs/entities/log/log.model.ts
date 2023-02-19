@@ -14,6 +14,20 @@ export class LogModel extends Model<LogModel> {
   @Column({ primaryKey: true, autoIncrement: true })
   id?: number;
 
+  @Column
+  client?: string;
+
+  @Column
+  os?: string;
+
+  @Column
+  device?: string;
+}
+@Table
+export class LogModelTest extends Model<LogModelTest> {
+  @Column({ primaryKey: true, autoIncrement: true })
+  id?: number;
+
   @Column({ field: 'client_id' })
   @ForeignKey(() => ClientModel)
   clientId?: number;

@@ -14,18 +14,6 @@ export class LogsService {
   }
 
   findAll() {
-    return `This action returns all logs`;
-  }
-
-  findOne(id: number) {
-    return `This action returns a #${id} log`;
-  }
-
-  update(id: number, updateLogDto: Partial<Log>) {
-    return `This action updates a #${id} log`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} log`;
+    return this.logGatewayInternal.findAll();
   }
 }

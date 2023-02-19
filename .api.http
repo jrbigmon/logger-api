@@ -3,5 +3,9 @@ POST http://localhost:4000/logs
 Content-Type: application/json
 
 {
-  "teste": "Vagner"
+  "client": "teste",
+  "os": "systemOperation teste",
+  "device": "device teste"
 }
+### GET - Get all logs in database
+GET http://localhost:4000/logs

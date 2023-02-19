@@ -11,10 +11,14 @@ export class LogGatewaySequelize implements LogGatewayInterface {
   ) {}
 
   async create(log: Log): Promise<Log> {
-    console.log(log);
-    return;
     const logCreated = await this.logModel.create(log);
     log.id = logCreated.id;
     return logCreated;
+  }
+
+  async findAll(): Promise<Log[]> {
+    const logs = await this.logModel.findAll();
+
+    return logs;
   }
 }
