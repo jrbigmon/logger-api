@@ -1,0 +1,7 @@
+### POST - Create a new log
+POST http://localhost:4000/logs
+Content-Type: application/json
+
+{
+  "teste": "Vagner"
+}
