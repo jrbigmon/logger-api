@@ -1,5 +1,4 @@
 import { OperationalSystem } from './../entities/operational-system/operational-system-entity';
-import { Model } from 'sequelize-typescript';
 import { ClientModel } from './../entities/client/client-model';
 import { OperationalSystemModel } from './../entities/operational-system/operational-system-model';
 import { DeviceModel } from './../entities/device/device.model';
